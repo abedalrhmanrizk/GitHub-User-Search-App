@@ -9,7 +9,7 @@ function Body({ data, isLoading, error }) {
   return (
     <section>
       <div className={styles.header}>
-        <img src={data.avatar_url} />
+        <img src={data.avatar_url} alt='' />
         <div className={styles.accountDetails}>
           <div>
             <h2>{data.name}</h2>
