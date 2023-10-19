@@ -20,7 +20,7 @@ function Header() {
       <h1>devfinder</h1>
       <button onClick={() => setIsDark(!isDark)}>
         <span>{isDark ? 'LIGHT' : 'DARK'}</span>
-        <img src={isDark ? sunIcon : moonIcon} />
+        <img src={isDark ? sunIcon : moonIcon} alt='' />
       </button>
     </header>
   );
