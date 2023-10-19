@@ -1,0 +1,196 @@
+section {
+  border-radius: 15px;
+  background: var(--background-color-2);
+  padding: 32px 24px;
+  margin-bottom: 24px;
+  box-shadow: 0px 16px 30px -10px var(--shadow);
+}
+
+section img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+.header {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 33px;
+}
+
+h2 {
+  color: var(--text-color-1);
+  font-family: Space Mono;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.header a {
+  color: var(--main-color);
+  font-family: Space Mono;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.joinDate {
+  color: var(--text-color-2);
+  font-size: 1.3rem;
+}
+
+.bio {
+  margin-bottom: 16px;
+  color: var(--text-color-3);
+  font-family: Space Mono;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.numbers {
+  padding: 18px 15px 19px 15px;
+  border-radius: 10px;
+  background-color: var(--background-color-1);
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  margin-bottom: 24px;
+}
+
+.numbers div {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.numbers div span:first-of-type {
+  color: var(--text-color-3);
+  text-align: center;
+  font-family: Space Mono;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.5px;
+}
+
+.numbers div span:last-of-type {
+  color: var(--text-color-1);
+  text-align: center;
+  font-family: Space Mono;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  gap: 17px;
+}
+
+ul li {
+  display: flex;
+  gap: 13px;
+  flex-basis: 100%;
+}
+
+ul span:first-of-type {
+  height: 20px;
+  width: 20px;
+}
+
+ul span:last-of-type {
+  color: var(--text-color-3);
+  font-family: Space Mono;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1px;
+}
+
+ul li a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+.accountDetails {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  section {
+    padding: 48px;
+  }
+
+  .header {
+    gap: 36px;
+  }
+  section img {
+    height: 117px;
+    width: 117px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  .header a {
+    font-size: 1.6rem;
+  }
+  .joinDate {
+    font-size: 1.5rem;
+  }
+  .bio {
+    margin-left: 154px;
+    margin-bottom: 32px;
+    font-size: 1.5rem;
+  }
+  .numbers {
+    padding: 15px 32px 17px;
+    justify-content: space-between;
+    margin-left: 154px;
+    margin-bottom: 37px;
+  }
+
+  .numbers div span:first-of-type {
+    font-size: 1.3rem;
+  }
+
+  .numbers div span:last-of-type {
+    font-size: 22px;
+  }
+  .accountDetails {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  ul {
+    margin-left: 154px;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  ul li {
+    flex-basis: 48%;
+  }
+  ul span:last-of-type {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,39 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+h1 {
+  color: var(--heading-color);
+  font-family: Space Mono;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+header span {
+  color: var(--text-color-3);
+  font-family: Space Mono;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+@media (min-width: 640px) {
+  h1 {
+    font-size: 2.6rem;
+  }
+}
